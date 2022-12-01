@@ -1,0 +1,392 @@
+/* Styling for the whole webpage starts here */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+
+}
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+/* Styling for the whole webpage ends here */
+
+/*Home Page styling starts here*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-top: 2%;
+    height: 150px;
+    width: 220px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    text-align: right;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 3%;
+}
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+nav li a {
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover {
+    color: rgb(255, 214, 135);
+}
+.navbar_button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(255, 214, 135);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar_button:hover {
+    background-color: #C49F53;
+}
+.h1_home {
+    color: rgb(255, 214, 135);
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    line-height: 75px;
+    margin-top: 2%;
+    padding: 0px 100px;
+    background-image: linear-gradient(#00FF00,#00BB9D);
+}
+.cardSection {
+    margin: auto;
+    height: 570px;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-image: url(images/sad_labrador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    transition: 5s;
+    padding: 10px;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate {
+    0% {
+        background-image: url(images/sad_labrador.png);
+    }
+    25% {
+        background-image: url(images/sad_corgi.png);
+    }
+    50% {
+        background-image: url(images/sad_chihuahua.png);
+    }
+    75% {
+        background-image: url(images/sad_hushpuppy.png);
+    }
+    100% {
+        background-image: url(images/sad_husky.png);
+    }
+}
+.card1{
+    display: none;
+}
+.card2 {
+    display: none;
+}
+.cardSection:hover .card1{
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #dcfbd5;
+    width: 25em;
+    height: 30em;
+    border-radius: 1em;
+    box-shadow: 0 1em 1em rgba(0,0,0,0.15);
+    float: left;
+    margin-left: 15%;
+}
+.cardSection:hover .card2 {
+    display: flex;
+    margin-top: 2%; 
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #dcfbd5;
+    width: 25em;
+    height: 30em;
+    border-radius: 1em;
+    box-shadow: 0 1em 1em rgba(0,0,0,0.15);
+    float: right;
+    margin-right: 15%;
+}
+.cardContent {
+    height: 100%;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cardIcon {
+    font-size: 8rem;
+    color: aquamarine;
+    margin-top: .1em;
+}
+.cardText {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #777777;
+    margin-top: 1em;
+}
+.cardButton {
+    background-color: #FFD687;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    width: 10em;
+    height: 3em;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 0 .5em 1em rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.cardButton:hover {
+    background-color: #C49F53;
+}
+
+/*Home Page styling ends here*/
+
+/*About Us Page styling starts here*/
+
+.about {
+    margin: auto;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #dcfbd5;
+    padding: 78px 0px;
+}
+.about img {
+    height: auto;
+    width: 420px;
+}
+.about_text {
+    width: 550px;
+}
+.about_text h1, .about_text h2 {
+    text-align: center;
+}
+.about_text p {
+    text-align: justify;
+    margin-top: 5%;
+}
+.about_main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*About Us Page styling ends here*/
+
+/*Join Us Page styling starts here*/
+
+.main_joinus {
+    width: 600px;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.8);
+    background: #dcfbd5;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.input_box {
+    height: 50px;
+    width: 70%;
+    font-size: 18pt;
+}
+.p_joinus {
+    font-size: 18px;
+}
+.sign_up_button {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 9px 25px;
+    background-color: #FFD687;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sign_up_button:hover {
+    background-color: #C49F53;
+}
+.socials_joinus {
+    margin-top: 3%;
+    text-align: center;
+    line-height: 2;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-instagram {
+    color: #d62976;
+}
+.fa-whatsapp {
+    color: #4FCE5D;
+}
+
+/*Join Us Page styling ends here*/
+
+/*Contact Us Page styling starts here*/
+
+.main_contactus {
+    margin: auto;
+    width: 80%;
+    margin-top: 3%;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #dcfbd5;
+    padding: 10px;
+}
+input[type=text], select, .subject_textArea {
+    width: 170%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.submit_button {
+    padding: 9px 25px;
+    background-color: #FFD687;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    font-weight: bold;
+}
+.submit_button:hover {
+    background-color: #C49F53;
+}
+select {
+    width: 179%;
+}
+.subject_textArea {
+    height: 250px;
+}
+.column {
+    float: left;
+    width: 60px;
+    padding: 40px;
+}
+.column2 {
+    float: right;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+.column img{
+    height: 600px;
+    width: 650px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*Contact Us Page styling ends here*/
+
+/*Terms of Service Page styling starts here*/
+
+.tos_header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    text-align: center;
+}
+.parent {
+    display: flex;
+    text-align: justify;
+}
+.child {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.centerButton {
+    text-align: center;
+}
+.goBackToJoinUs {
+    position: relative;
+    text-align: center;
+    padding: 9px 25px;
+    background-color: rgb(255, 214, 135);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    font-size: 50px;
+}
+.goBackToJoinUs:hover {
+    background-color: #C49F53;
+}
+
+/*Terms of Service Page styling ends here*/
